@@ -14,10 +14,12 @@ import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera as Camera } from 'react-native-camera';
 class ScanScreen extends Component {
   onSuccess = e => {
-    // alert('QR code has been scanned! Redirecting to URL...')
-    Linking.openURL(e.data).catch(err =>
-      console.error('An error occured', err)
-    );
+      alert('QR code has been scanned! Redirecting to URL...');
+      setTimeout(() => {
+        Linking.openURL(e.data).catch(err =>
+          console.error('An error occured', err)
+        );
+      }, 1000)
   };
   render() {
     const {navigate} = this.props.navigation;
