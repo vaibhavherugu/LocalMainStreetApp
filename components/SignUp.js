@@ -14,42 +14,26 @@ class SignUpScreen extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-     fname: '',
-     lname: '',
+     flname: '',
      email: '',
      phone: '',
-     username: '',
      password: '',
-     cpass: '',
-     ccardnum: ''
    }
   }
 
- handlefname = (text) => {
-   this.setState({ fname: text })
-}
-handlelname = (text) => {
-   this.setState({ lname: text })
+ handleflname = (text) => {
+   this.setState({ flname: text })
 }
 handleEmail = (text) => {
    this.setState({ email: text })
 }
-handlePhone = (text) => {
-  this.setState({ phone: text })
-}
-handleUS = (text) => {
-  this.setState({ username: text })
-}
 handlePW = (text) => {
   this.setState({ password: text })
 }
-handleCPW = (text) => {
-  this.setState({ cpass: text })
+handlePhone = (text) => {
+  this.setState({ phone: text })
 }
 
-handleCardNum = (text) => {
-  this.setState({ ccardnum: text })
-}
 
   render() {
     const {navigate} = this.props.navigation;
@@ -58,18 +42,10 @@ handleCardNum = (text) => {
           <StatusBar barStyle="dark-content" />
           <TextInput style={styles.input2}
              underlineColorAndroid = "transparent"
-             placeholder = 'First Name'
+             placeholder = 'Full Name'
              placeholderTextColor = "black"
              autoCapitalize = "none"
-             onChangeText = {this.handlelname}
-          />
-
-          <TextInput style={styles.input2}
-             underlineColorAndroid = "transparent"
-             placeholder = 'Last Name'
-             placeholderTextColor = "black"
-             autoCapitalize = "none"
-             onChangeText = {this.handlelname}
+             onChangeText = {this.handleflname}
           />
 
           <TextInput style={styles.input2}
@@ -91,27 +67,10 @@ handleCardNum = (text) => {
 
           <TextInput style={styles.input2}
              underlineColorAndroid = "transparent"
-             placeholder = 'Confirm Password'
-             placeholderTextColor = "black"
-             autoCapitalize = "none"
-             secureTextEntry
-             onChangeText = {this.handleCPW}
-          />
-
-          <TextInput style={styles.input2}
-             underlineColorAndroid = "transparent"
              placeholder = 'Phone Number'
              placeholderTextColor = "black"
              autoCapitalize = "none"
              onChangeText = {this.handlePhone}
-          />
-
-          <TextInput style={styles.input2}
-             underlineColorAndroid = "transparent"
-             placeholder = 'Card Number'
-             placeholderTextColor = "black"
-             autoCapitalize = "none"
-             onChangeText = {this.handleCardNum}
           />
 
           <TouchableOpacity style={styles.buttons} onPress={()=>{
@@ -162,7 +121,8 @@ const styles = StyleSheet.create({
     color: '#000000'
   },
   buttonsUnderLogin: {
-    margin: 7
+    margin: 7,
+    marginBottom: 200
   }
     })
 
