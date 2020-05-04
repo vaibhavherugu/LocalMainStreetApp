@@ -1,5 +1,5 @@
 'use strict';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import axios from 'axios';
 import {
   View,
@@ -12,62 +12,61 @@ import {
 } from 'react-native';
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
-import { RNCamera as Camera } from 'react-native-camera';
+import {RNCamera as Camera} from 'react-native-camera';
 class ScanScreen extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
       nameq: {},
       balance: {},
-      amount: "",
-      text: ``
-    }
+      amount: '',
+      text: ``,
+      testboi: '',
+    };
   }
   onSuccess = (e) => {
-    try{
-      const data = JSON.parse(e.data)
-      const nameq = data.nameq
+    try {
+      const data = JSON.parse(e.data);
+      const nameq = data.nameq;
       const balance = data.balance;
       this.setState({
         nameq: nameq,
         balance: balance,
-        text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars!`
+        text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars!`,
       });
       const alerts = {
         data: {
           balance: balance,
-          nameq: nameq
-        }
-      }
-    }catch(err){
-      alert("Invalid QR Code.")
+          nameq: nameq,
+        },
+      };
+    } catch (err) {
+      alert('Invalid QR Code.');
     }
   };
 
-
   handleAmount = (number) => {
-    this.setState({ amount: number })
-  }
+    this.setState({amount: number});
+  };
   render() {
     const {navigate} = this.props.navigation;
     // const nameq = this.state.nameq.map((name))
     return (
-      <QRCodeScanner 
+      <QRCodeScanner
         onRead={this.onSuccess}
         flashMode={Camera.Constants.FlashMode.auto}
         topContent={
-          <TextInput style={styles.input2}
-          underlineColorAndroid = "transparent"
-          placeholder = 'Amount Paid'
-          placeholderTextColor = "#000000"
-          autoCapitalize = "none"
-          onChangeText = {this.handleAmount}
-       />
+          <TextInput
+            style={styles.input2}
+            underlineColorAndroid="transparent"
+            placeholder="Amount Paid"
+            placeholderTextColor="#000000"
+            autoCapitalize="none"
+            onChangeText={this.handleAmount}
+          />
         }
-        bottomContent={
-        <Text>{this.state.text}</Text>
-        }
-      /> 
+        bottomContent={<Text>{this.state.text}</Text>}
+      />
     );
   }
 }
@@ -75,7 +74,7 @@ class ScanScreen extends Component {
 const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
-    fontSize: 15
+    fontSize: 15,
   },
   input2: {
     marginTop: 15,
@@ -85,27 +84,27 @@ const styles = StyleSheet.create({
     color: '#000000',
     width: 340,
     borderRadius: 15,
- },
+  },
   centerText: {
     flex: 1,
     fontSize: 18,
     padding: 32,
-    color: '#000000'
+    color: '#000000',
   },
   textBold: {
     fontWeight: '500',
-    color: '#000'
+    color: '#000',
   },
   buttonText: {
     fontSize: 21,
-    color: 'rgb(0,122,255)'
+    color: 'rgb(0,122,255)',
   },
   buttonTouchable: {
-    padding: 16
+    padding: 16,
   },
   background: {
-    backgroundColor: "#ffffff",
+    backgroundColor: '#ffffff',
     // marginBottom: 100
-  }
+  },
 });
 export default ScanScreen;
