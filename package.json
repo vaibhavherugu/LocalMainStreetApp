@@ -17,6 +17,7 @@
     "axios": "^0.19.2",
     "firebase": "^7.14.2",
     "firebase-tools": "^8.2.0",
+    "ios-deploy": "^1.10.0",
     "react": "16.9.0",
     "react-native": "^0.62.2",
     "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera.git",
