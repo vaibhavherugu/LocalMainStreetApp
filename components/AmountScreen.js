@@ -22,10 +22,10 @@ import {
 } from 'react-native';
 import {cos} from 'react-native-reanimated';
 stripe.setOptions({
-  publishableKey: 'pk_test_HWcOeGStIfoP98VZkHRIJUmO00E1eZyuQG',
+  publishableKey: 'pk_test_KkfXWjgjLwtNgUTOjtn25pj4005QCLSJ6I',
 });
 
-class ShopScreen extends React.Component {
+class AmountScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,21 +35,8 @@ class ShopScreen extends React.Component {
     };
   }
   handleSearch = (text) => {
-    this.setState({search: text});
+    this.setState({amount: text});
   };
-
-  componentDidMount() {
-    axios
-      .get('http://localhost:3000')
-      .then((response) => {
-        this.setState({
-          data: response.data,
-        });
-      })
-      .catch(function (err) {
-        alert(err);
-      });
-  }
 
   static title = 'Card Form';
 
@@ -85,47 +72,32 @@ class ShopScreen extends React.Component {
     }
   };
 
+  makePayment = () => {
+    // console.log('hello world');
+    this.setState({loading: true});
+    axios({
+      method: 'POST',
+      url:
+        'http://localhost:5000/localmainstreet-b0144/us-central1/completePaymentWithStripe',
+      data: {
+        amount: this.state.amount * 100 * 1.02,
+        currency: 'usd',
+        token: this.state.token,
+      },
+    }).then((response) => {
+      console.log(response);
+      alert('Payment processed!');
+      this.setState({loading: false});
+      setTimeout(() => {
+        this.props.navigation.navigate('Buttons');
+      }, 1500);
+    });
+  };
+
   render() {
     const {loading, token} = this.state;
     console.log('##data', this.state.data);
-    const Item = ({user}) => {
-      console.log('##item', user);
-      return (
-        <View>
-          <View style={styles.viewforFlatList}>
-            <View style={styles.viewforButton}>
-              <Text style={styles.businessNameStyle}>{user.item.bname}</Text>
-              <View style={styles.container}>
-                <Button
-                  style={styles.buttons1}
-                  text="Buy Now"
-                  loading={loading}
-                  onPress={() => {
-                    navigate('Checkout', {
-                      bname: user.item.bname,
-                      bdesc: user.item.bdesc,
-                    });
-                  }}
-                />
-                <View style={styles.token}>
-                  {token && <>{this.makePayment}</>}
-                </View>
-              </View>
-            </View>
-          </View>
-          <Text style={styles.businessDescandEmailStyle}>
-            {user.item.bdesc}
-          </Text>
-          <Text style={styles.businessDescandEmailStyle}>
-            Email: {user.item.email}
-          </Text>
-          <Text style={styles.phoneNumberStyle}>
-            Phone Number: {user.item.phonenum}
-          </Text>
-        </View>
-      );
-    };
-
+    console.log(token);
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.viewForSearch}>
@@ -134,40 +106,76 @@ class ShopScreen extends React.Component {
           <TextInput
             style={styles.input2}
             underlineColorAndroid="transparent"
-            placeholder="Business Category/Name"
+            placeholder="Amount"
             placeholderTextColor="#000000"
             autoCapitalize="none"
             onChangeText={this.handleSearch}
           />
-          <TouchableOpacity style={styles.buttons}>
-            <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity>
+          <Button
+            style={styles.buttons1}
+            text="Buy Now"
+            loading={loading}
+            onPress={this.handleCardPayPress}
+          />
+          <View style={styles.token}>
+            {this.state.token && (
+              <Button
+                text="Make Payment"
+                loading={loading}
+                onPress={this.makePayment}
+              />
+            )}
+          </View>
         </View>
         <TouchableOpacity
           style={styles.buttonsUnderLogin}
           onPress={() => {
             navigate('Help');
           }}>
-          <Text style={styles.buttonTextForSignUp}>Help</Text>
+          <Text>Help</Text>
         </TouchableOpacity>
+        <Text style={styles.buttonTextForSignUp}>
+          Note: You will be charged 2% extra during this transaction for fees
+          for LocalMainStreet. We do not store your credit card information.
+        </Text>
         {/* <WebView
         source={{ uri: 'https://reactnative.dev' }}
         style={{ marginTop: 20 }}
       />   */}
-        <View style={styles.FlatList}>
+        {/* <View style={styles.FlatList}>
           <FlatList
             data={this.state.data}
             renderItem={(user) => <Item user={user} />}
             keyExtractor={(user) => user.id}
           />
-        </View>
+        </View> */}
       </View>
     );
   }
 }
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  header: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instruction: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+  token: {
+    height: 20,
+  },
   viewforButton: {
-    flexDirection: 'row',
+    justifyContent: 'center',
+    flex: 1,
+    alignItems: 'center',
   },
   viewforFlatList: {
     alignItems: 'center',
@@ -188,8 +196,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Avenir',
   },
   input2: {
-    marginTop: 30,
-    marginRight: 15,
     height: 40,
     borderColor: '#000000',
     borderWidth: 1,
@@ -223,7 +229,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 5,
-    width: 70,
+    width: 270,
     opacity: 1,
     backgroundColor: '#919191',
     borderRadius: 15,
@@ -238,9 +244,11 @@ const styles = StyleSheet.create({
   },
   buttonTextForSignUp: {
     color: '#000000',
+    textAlign: 'center',
   },
   buttonsUnderLogin: {
     margin: 7,
+    marginTop: -21,
   },
   businessNameStyle: {
     textAlign: 'center',
@@ -253,4 +261,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ShopScreen;
+export default AmountScreen;

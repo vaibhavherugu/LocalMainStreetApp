@@ -1,0 +1,1372 @@
+[debug] [2020-05-05T17:17:22.851Z] ----------------------------------------------------------------------
+[debug] [2020-05-05T17:17:22.853Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-05-05T17:17:22.853Z] CLI Version:   8.2.0
+[debug] [2020-05-05T17:17:22.853Z] Platform:      darwin
+[debug] [2020-05-05T17:17:22.853Z] Node Version:  v12.13.1
+[debug] [2020-05-05T17:17:22.854Z] Time:          Tue May 05 2020 13:17:22 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-05T17:17:22.854Z] ----------------------------------------------------------------------
+[debug] [2020-05-05T17:17:22.855Z] 
+[debug] [2020-05-05T17:17:22.862Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-05T17:17:22.863Z] > authorizing via signed-in user
+[debug] [2020-05-05T17:17:22.863Z] [iam] checking project localmainstreet-b0144 for permissions ["firebase.projects.get"]
+[debug] [2020-05-05T17:17:22.865Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/localmainstreet-b0144:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-05T17:17:23.117Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 May 2020 17:16:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=159","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-05T17:17:23.118Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/localmainstreet-b0144  
+ 
+[debug] [2020-05-05T17:17:23.329Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 May 2020 17:16:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/vaibhavherugu/LocalMainStreet'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/vaibhavherugu/LocalMainStreet/functions" for Cloud Functions...
+[debug] [2020-05-05T17:17:23.357Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-05T17:17:23.357Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-05T17:17:23.357Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-05T17:17:23.358Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_76329.sock 
+[debug] [2020-05-05T17:17:23.358Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: BUSY 
+[debug] [2020-05-05T17:17:23.713Z] [runtime-status] [76329] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T17:17:23.714Z] [runtime-status] [76329] Disabled runtime features: undefined 
+[debug] [2020-05-05T17:17:23.716Z] [runtime-status] [76329] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T17:17:23.717Z] [runtime-status] [76329] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T17:17:23.718Z] [runtime-status] [76329] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T17:17:23.745Z] [runtime-status] [76329] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T17:17:23.745Z] [runtime-status] [76329] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T17:17:23.746Z] [runtime-status] [76329] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T17:17:23.747Z] [runtime-status] [76329] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T17:17:23.747Z] [runtime-status] [76329] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[completePaymentWithStripe]: http function initialized (http://localhost:5000/localmainstreet-b0144/us-central1/completePaymentWithStripe).
+[debug] [2020-05-05T17:17:23.772Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: IDLE 
+[debug] [2020-05-05T21:23:38.809Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:23:38.817Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:23:38.818Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:23:38.878Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T21:23:38.878Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=1 
+[debug] [2020-05-05T21:23:38.878Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:23:38.878Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:23:38.878Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:23:45.535Z] [runtime-status] [77430] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T21:23:45.556Z] [runtime-status] [77430] Disabled runtime features: undefined 
+[debug] [2020-05-05T21:23:45.571Z] [runtime-status] [77430] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:23:45.572Z] [runtime-status] [77430] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:23:45.574Z] [runtime-status] [77430] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T21:23:46.036Z] [runtime-status] [77430] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T21:23:46.036Z] [runtime-status] [77430] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:23:46.037Z] [runtime-status] [77430] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:23:46.037Z] [runtime-status] [77430] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:23:46.038Z] [runtime-status] [77430] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T21:23:46.311Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:23:46.312Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:23:46.312Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:23:46.316Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:23:46.369Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:23:46.526Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:23:46.600Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:23:47.751Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:23:47.751Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:33:10.418Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:33:10.419Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:33:10.419Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:33:10.469Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:33:10.481Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:33:10.481Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:33:10.482Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:33:10.493Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:33:10.493Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:33:10.494Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:33:10.527Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:33:10.629Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:33:10.631Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:33:11.472Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:33:11.472Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:40:02.288Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:40:02.288Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:40:02.288Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:02.288Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:02.366Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:02.366Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:02.367Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-05T21:40:02.367Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-05T21:40:02.384Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:02.452Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:03.972Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=2 
+[debug] [2020-05-05T21:40:03.972Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.001Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:04.001Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:04.038Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-05T21:40:04.054Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:04.054Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:04.057Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.057Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=3 
+[debug] [2020-05-05T21:40:04.058Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.058Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:04.058Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:04.059Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:04.059Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:04.059Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:04.091Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.091Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=4 
+[debug] [2020-05-05T21:40:04.091Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.092Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:04.092Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[debug] [2020-05-05T21:40:04.092Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:04.093Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:04.093Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:04.093Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:04.094Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:04.162Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:04.163Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~2s
+[debug] [2020-05-05T21:40:04.876Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:04.876Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:04.876Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:04.877Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:04.877Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:04.877Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:04.877Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:04.877Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:04.886Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:04.886Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:04.886Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:04.887Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:04.907Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:04.934Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:04.935Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:05.450Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:05.450Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:05.451Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:05.452Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:05.452Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:05.452Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:05.452Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:05.452Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:05.464Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:05.464Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:05.464Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:05.464Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:05.468Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:05.479Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:05.479Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:06.106Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:06.106Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:06.107Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:06.107Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:06.107Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:06.107Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:06.107Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:06.107Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:06.118Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:06.118Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:06.118Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:06.119Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:06.119Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:06.126Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:06.126Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:06.747Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:06.747Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:06.748Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:06.748Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:06.748Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:06.748Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:06.748Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:06.748Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:06.758Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:06.928Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:06.928Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:06.928Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:06.929Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:06.931Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:06.931Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:07.713Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:07.713Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:07.713Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:07.713Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:07.714Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:07.714Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:07.714Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:07.714Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:07.724Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:07.725Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:07.725Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:07.725Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:07.726Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:07.730Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:07.731Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:08.507Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:08.507Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:08.508Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:08.508Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:08.508Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:08.508Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:08.508Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:08.508Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:08.517Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:08.518Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:08.518Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:08.519Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:08.519Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:08.522Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:08.523Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:09.113Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:09.113Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:09.114Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:09.115Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:09.115Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:09.115Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:09.140Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:09.140Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:09.142Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:09.142Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:09.142Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:09.143Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:09.143Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:09.146Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:09.160Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:09.747Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:09.747Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:09.748Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:09.748Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:09.748Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:09.748Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:09.748Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:09.748Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:09.758Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:09.759Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:09.759Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:09.759Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:09.760Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:09.762Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:09.763Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:10.317Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:10.317Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:10.317Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:10.317Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:10.317Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:10.317Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:10.318Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:10.318Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:10.327Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:10.327Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:10.327Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:10.327Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:10.328Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:10.384Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:10.385Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:10.951Z] [runtime-status] [77726] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T21:40:10.952Z] [runtime-status] [77727] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T21:40:10.952Z] [runtime-status] [77727] Disabled runtime features: undefined 
+[debug] [2020-05-05T21:40:10.952Z] [runtime-status] [77728] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T21:40:10.952Z] [runtime-status] [77728] Disabled runtime features: undefined 
+[debug] [2020-05-05T21:40:10.953Z] [runtime-status] [77726] Disabled runtime features: undefined 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:10.954Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:10.954Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:10.954Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:10.954Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:10.954Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:10.954Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:10.954Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:10.955Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:10.965Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:10.966Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:10.966Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:10.966Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:10.967Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:10.969Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:11.006Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:11.115Z] [runtime-status] [77728] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.116Z] [runtime-status] [77726] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.116Z] [runtime-status] [77726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.116Z] [runtime-status] [77726] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T21:40:11.117Z] [runtime-status] [77727] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.117Z] [runtime-status] [77727] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.188Z] [runtime-status] [77727] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T21:40:11.189Z] [runtime-status] [77728] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:11.189Z] [runtime-status] [77728] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:11.497Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:11.497Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:11.497Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:11.498Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:11.498Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:11.498Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:11.498Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:11.498Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:11.508Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:11.509Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:11.509Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:11.509Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:11.509Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:11.513Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:11.514Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:12.061Z] [runtime-status] [77726] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T21:40:12.061Z] [runtime-status] [77727] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T21:40:12.061Z] [runtime-status] [77728] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T21:40:12.062Z] [runtime-status] [77726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.062Z] [runtime-status] [77728] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.062Z] [runtime-status] [77727] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.062Z] [runtime-status] [77726] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77728] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77727] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77727] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77726] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77726] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77728] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77728] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T21:40:12.063Z] [runtime-status] [77727] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:12.293Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:12.304Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:12.305Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:12.305Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:12.305Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:12.305Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:12.338Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:12.338Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:12.338Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:12.339Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:12.339Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:12.340Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:12.341Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:12.344Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:12.344Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:12.543Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:12.543Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:12.543Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:12.543Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:12.544Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:12.545Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:12.570Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:12.586Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:12.591Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:12.721Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:12.724Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:12.724Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:12.783Z] [runtime-status] [77728] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:12.783Z] [runtime-status] [77726] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:12.784Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:13.161Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:13.161Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.162Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.162Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.162Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:13.162Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.162Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:13.162Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:13.172Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:13.172Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:13.172Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:13.172Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:13.173Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:13.175Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:13.176Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:13.823Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:13.823Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.823Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.823Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.823Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:13.823Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.823Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:13.824Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:13.828Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:13.828Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.829Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.829Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.829Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:13.829Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.829Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:13.829Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:13.835Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:13.835Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:13.835Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:13.835Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:13.838Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:13.840Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:13.840Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:13.840Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:13.840Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:13.841Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:13.843Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:13.848Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:13.848Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:13.848Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:13.849Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:13.849Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.849Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:13.849Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.881Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:13.881Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.881Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:13.881Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:13.882Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.882Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-05-05T21:40:13.882Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:13.886Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.886Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=5 
+[debug] [2020-05-05T21:40:13.886Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:13.886Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:13.887Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:13.887Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:13.887Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:13.888Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:13.888Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:13.888Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:13.888Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:13.889Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:13.894Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:13.895Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:14.565Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:14.565Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:14.566Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:14.566Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-05T21:40:14.566Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-05T21:40:14.566Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:14.567Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:14.567Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:14.567Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:14.567Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:14.567Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:14.568Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:14.568Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:14.568Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:14.568Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:14.568Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:14.576Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:14.576Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:14.576Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:14.576Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:14.576Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:14.577Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:14.577Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:14.577Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:14.577Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:14.582Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:14.583Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:14.584Z] [runtime-status] [77727] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:14.585Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:14.586Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:14.658Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:14.658Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:14.658Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:14.659Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:14.659Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:14.659Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:14.659Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:14.659Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:14.669Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:14.669Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:14.669Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:14.669Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:14.670Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:14.672Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:14.672Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.133Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:15.133Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.133Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.133Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.133Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.134Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.134Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:15.134Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:15.143Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.143Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.143Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.144Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:15.144Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.147Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.148Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.165Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:15.165Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.167Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.167Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.167Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.167Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.167Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:15.167Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:15.174Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.175Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.175Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.175Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:15.176Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.180Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.180Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.309Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:15.309Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.310Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.310Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.310Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.310Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.310Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:15.310Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:15.320Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.320Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.320Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.321Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:15.322Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.325Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.327Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:15.576Z] [runtime-status] [77732] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T21:40:15.579Z] [runtime-status] [77732] Disabled runtime features: undefined 
+[debug] [2020-05-05T21:40:15.583Z] [runtime-status] [77732] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:15.584Z] [runtime-status] [77732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:15.586Z] [runtime-status] [77732] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T21:40:15.619Z] [runtime-status] [77732] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T21:40:15.619Z] [runtime-status] [77732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:15.620Z] [runtime-status] [77732] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T21:40:15.620Z] [runtime-status] [77732] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T21:40:15.620Z] [runtime-status] [77732] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T21:40:15.649Z] [runtime-status] [77732] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.649Z] [runtime-status] [77732] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.650Z] [runtime-status] [77732] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.654Z] [runtime-status] [77732] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:15.657Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.695Z] [runtime-status] [77732] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.702Z] [runtime-status] [77732] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.805Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:15.805Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.805Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.805Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.805Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.805Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.805Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:15.806Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:15.816Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.816Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.816Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.816Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:15.817Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.820Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.820Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.839Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:15.839Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.842Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.842Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.842Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.842Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.842Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:15.843Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:15.851Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:15.851Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:15.851Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:15.851Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:15.852Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:15.857Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:15.857Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:15.958Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:15.958Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.958Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:15.958Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:15.958Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:15.959Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:15.959Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:15.959Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:15.969Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:16.067Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:16.067Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:16.067Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:16.068Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:16.070Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:16.070Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:16.314Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.315Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-05-05T21:40:16.315Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:16.315Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:16.315Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:16.315Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:16.315Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: IDLE 
+[debug] [2020-05-05T21:40:16.316Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.316Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:16.316Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:16.316Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:16.316Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:16.317Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:16.321Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:16.321Z] [runtime-status] [77728] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:16.365Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:16.365Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.366Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.366Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.366Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:16.366Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:16.366Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:16.366Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:16.376Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:16.377Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:16.377Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:16.377Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:16.378Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:16.380Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:16.380Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:16.401Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:16.401Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.402Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.402Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.402Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:16.402Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:16.403Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:16.403Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:16.413Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:16.413Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:16.413Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:16.413Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:16.414Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:16.416Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:16.417Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:16.860Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:16.860Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.861Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.861Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.861Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:16.862Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:16.862Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:16.862Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:16.871Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:16.872Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:16.873Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:16.873Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:16.874Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:16.876Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:16.878Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:16.999Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:16.999Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.999Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:16.999Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:16.999Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:16.999Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:16.999Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:16.999Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.009Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:17.009Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.010Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.010Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.010Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.010Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.010Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:17.010Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[debug] [2020-05-05T21:40:17.010Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.011Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.011Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.011Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:17.011Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.015Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.015Z] [runtime-status] [77727] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:17.021Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.021Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.021Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.021Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:17.022Z] [functions] Runtime ready! Sending request! 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.026Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:17.026Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.026Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.027Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.027Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.027Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.028Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.028Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:17.028Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:17.028Z] [runtime-status] [77728] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:17.036Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.036Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.036Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.036Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:17.037Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.040Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.041Z] [runtime-status] [77726] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:17.495Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.495Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-05-05T21:40:17.495Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.495Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.496Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:17.496Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.496Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:17.497Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.497Z] [runtime-status] [77732] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.497Z] [runtime-status] [77732] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.497Z] [runtime-status] [77732] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.498Z] [runtime-status] [77732] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:17.499Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.503Z] [runtime-status] [77732] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.504Z] [runtime-status] [77732] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.582Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:17.582Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.582Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.591Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.591Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.591Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.591Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:17.591Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:17.592Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.592Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.592Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.592Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:17.593Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.597Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.598Z] [runtime-status] [77430] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:17.667Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.667Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-05-05T21:40:17.667Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.667Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.667Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:17.667Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.667Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:17.667Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.669Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.669Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.669Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.669Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:17.673Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.678Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.678Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:17.767Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:17.767Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.768Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:17.777Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:17.777Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:17.777Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:17.777Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:17.777Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:17.780Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:17.780Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:17.781Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:17.781Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:17.781Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:17.784Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:17.784Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.215Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: IDLE 
+[debug] [2020-05-05T21:40:18.215Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.218Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.218Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.218Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.218Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.238Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:18.239Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[debug] [2020-05-05T21:40:18.239Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.256Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-05-05T21:40:18.256Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.257Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.257Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:18.257Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.258Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:18.258Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.258Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.258Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.258Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.258Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:18.259Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.259Z] [runtime-status] [77732] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.260Z] [runtime-status] [77732] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.260Z] [runtime-status] [77732] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.260Z] [runtime-status] [77732] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77732.sock 
+[debug] [2020-05-05T21:40:18.260Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.265Z] [runtime-status] [77732] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.265Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.266Z] [runtime-status] [77728] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:18.266Z] [runtime-status] [77732] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.395Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:18.395Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.395Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.396Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.396Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.396Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.396Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:18.396Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:18.397Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.397Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.397Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.397Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:18.398Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.401Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.401Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.412Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:18.412Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.413Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.413Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.413Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.413Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.413Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:18.413Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:18.416Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.416Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.416Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.416Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:18.417Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.421Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.421Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.842Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: IDLE 
+[debug] [2020-05-05T21:40:18.842Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.844Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.844Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.844Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.844Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.844Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:18.844Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.845Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:18.845Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.845Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.845Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.845Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.845Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.845Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:18.845Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[debug] [2020-05-05T21:40:18.846Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.846Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.846Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.846Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:18.847Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.851Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.851Z] [runtime-status] [77727] Ephemeral server survived. 
+[debug] [2020-05-05T21:40:18.855Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.856Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.856Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.856Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:18.857Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.860Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.862Z] [runtime-status] [77728] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.949Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:18.950Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.950Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.950Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.950Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.950Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.950Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:18.950Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:18.959Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.960Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.960Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.961Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:18.962Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.964Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.965Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:18.984Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:18.984Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.986Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:18.986Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:18.987Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:18.987Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:18.987Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:18.987Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: BUSY 
+[debug] [2020-05-05T21:40:18.994Z] [runtime-status] [77726] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:18.994Z] [runtime-status] [77726] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:18.994Z] [runtime-status] [77726] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:18.994Z] [runtime-status] [77726] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77726.sock 
+[debug] [2020-05-05T21:40:18.995Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:18.998Z] [runtime-status] [77726] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:18.999Z] [runtime-status] [77726] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.365Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:19.365Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.366Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.366Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:19.366Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:19.366Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:19.366Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:19.366Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: BUSY 
+[debug] [2020-05-05T21:40:19.375Z] [runtime-status] [77727] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:19.376Z] [runtime-status] [77727] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:19.376Z] [runtime-status] [77727] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:19.376Z] [runtime-status] [77727] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77727.sock 
+[debug] [2020-05-05T21:40:19.377Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:19.381Z] [runtime-status] [77727] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:19.381Z] [runtime-status] [77727] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.384Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:19.384Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.385Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.385Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:19.387Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:19.387Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:19.387Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:19.387Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: BUSY 
+[debug] [2020-05-05T21:40:19.392Z] [runtime-status] [77728] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:19.393Z] [runtime-status] [77728] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:19.393Z] [runtime-status] [77728] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:19.393Z] [runtime-status] [77728] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77728.sock 
+[debug] [2020-05-05T21:40:19.394Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:19.399Z] [runtime-status] [77728] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:19.400Z] [runtime-status] [77728] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.624Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:19.624Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.625Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-05-05T21:40:19.625Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-05-05T21:40:19.625Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:40:19.625Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:40:19.625Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:19.625Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:40:19.635Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:40:19.635Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:40:19.635Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:40:19.635Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:40:19.636Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:40:19.638Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:40:19.638Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.786Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: IDLE 
+[debug] [2020-05-05T21:40:19.786Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.985Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: IDLE 
+[debug] [2020-05-05T21:40:19.985Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:19.996Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: IDLE 
+[debug] [2020-05-05T21:40:19.996Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:40:20.320Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:40:20.320Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:41:39.070Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:41:39.070Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:41:39.070Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:41:39.070Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:41:39.070Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:41:39.070Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:41:39.071Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:41:39.071Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:41:39.071Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:41:39.071Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:41:39.072Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:41:39.074Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:41:39.076Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:41:39.943Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:41:39.943Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:42:40.557Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:42:40.557Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:42:40.557Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:42:40.558Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:42:40.558Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:42:40.558Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:42:40.558Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:42:40.558Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:42:40.558Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:42:40.559Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:42:40.559Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:42:40.562Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:42:40.562Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:42:41.604Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:42:41.605Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:43:38.967Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:43:38.978Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:43:38.978Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:43:38.978Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:43:38.978Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:43:38.978Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:43:38.979Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:43:38.979Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:43:38.979Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:43:38.979Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:43:38.997Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:43:38.999Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:43:39.000Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:43:39.757Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:43:39.757Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:52:42.060Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:52:42.060Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:52:42.060Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:52:42.060Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:52:42.060Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:52:42.060Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:52:42.061Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:52:42.061Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:52:42.062Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:52:42.062Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:52:42.133Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:52:42.135Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:52:42.136Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:52:43.101Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:52:43.101Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:53:46.418Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:53:46.419Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:53:46.419Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:53:46.419Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:53:46.419Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:53:46.419Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:53:46.419Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:53:46.420Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:53:46.420Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:53:46.420Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:53:46.482Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:53:46.483Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:53:46.484Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:53:47.120Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:53:47.120Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T21:55:18.615Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T21:55:18.615Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T21:55:18.660Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T21:55:18.661Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T21:55:18.661Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:55:18.661Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T21:55:18.661Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T21:55:18.661Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T21:55:18.661Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T21:55:18.662Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T21:55:18.670Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T21:55:18.674Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T21:55:18.675Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T21:55:19.459Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T21:55:19.459Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:02:49.587Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:02:49.587Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:02:49.607Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:02:49.607Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:02:49.607Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:02:49.607Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T22:02:49.608Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:02:49.608Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:02:49.608Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:02:49.619Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:02:49.670Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:02:49.672Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:02:49.673Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T22:02:50.712Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T22:02:50.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:04:02.379Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:04:02.379Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:04:02.379Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:04:02.379Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:04:02.379Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:04:02.379Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T22:04:02.379Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:04:02.380Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:04:02.380Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:04:02.380Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:04:02.381Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:04:02.383Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:04:02.383Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T22:04:03.064Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T22:04:03.064Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:07:06.202Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:07:06.218Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:07:06.218Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:07:06.218Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:07:06.218Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:07:06.218Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: BUSY 
+[debug] [2020-05-05T22:07:06.219Z] [runtime-status] [77430] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:07:06.219Z] [runtime-status] [77430] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:07:06.219Z] [runtime-status] [77430] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:07:06.219Z] [runtime-status] [77430] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_77430.sock 
+[debug] [2020-05-05T22:07:06.220Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:07:06.222Z] [runtime-status] [77430] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:07:06.223Z] [runtime-status] [77430] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T22:07:06.863Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: IDLE 
+[debug] [2020-05-05T22:07:06.863Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:16:12.817Z] File /Users/vaibhavherugu/LocalMainStreet/functions/index.js changed, reloading triggers 
+[debug] [2020-05-05T22:16:13.882Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-05T22:16:13.882Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: FINISHING 
+[debug] [2020-05-05T22:16:13.889Z] [worker-pool] Shutting down IDLE worker (completePaymentWithStripe) 
+[debug] [2020-05-05T22:16:13.889Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: FINISHING 
+[debug] [2020-05-05T22:16:13.889Z] [worker-pool] Shutting down IDLE worker (completePaymentWithStripe) 
+[debug] [2020-05-05T22:16:13.889Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: FINISHING 
+[debug] [2020-05-05T22:16:13.889Z] [worker-pool] Shutting down IDLE worker (completePaymentWithStripe) 
+[debug] [2020-05-05T22:16:13.923Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: FINISHING 
+[debug] [2020-05-05T22:16:13.923Z] [worker-pool] Shutting down IDLE worker (completePaymentWithStripe) 
+[debug] [2020-05-05T22:16:13.923Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: FINISHING 
+[debug] [2020-05-05T22:16:13.923Z] [worker-pool] Shutting down IDLE worker (completePaymentWithStripe) 
+[debug] [2020-05-05T22:16:13.923Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: FINISHING 
+[debug] [2020-05-05T22:16:13.998Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-05T22:16:13.998Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-05T22:16:13.998Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-05T22:16:13.998Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78319.sock 
+[debug] [2020-05-05T22:16:13.998Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: BUSY 
+[debug] [2020-05-05T22:16:14.547Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: exited 
+[debug] [2020-05-05T22:16:14.547Z] [worker-~diagnostic~-e5b80dae-4291-4453-9f75-9cd25c99b196]: FINISHED 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: exited 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-d3faf998-5c61-4424-a487-a6698831184d]: FINISHED 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: exited 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-fefeb6c6-dc43-4fab-873f-505d8f72e28a]: FINISHED 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: exited 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-718e15d2-5f5a-49c6-b1f5-58e82da9cf0e]: FINISHED 
+[debug] [2020-05-05T22:16:14.548Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: exited 
+[debug] [2020-05-05T22:16:14.549Z] [worker-completePaymentWithStripe-a1ff1e48-504e-4425-84b5-6c5362fee312]: FINISHED 
+[debug] [2020-05-05T22:16:14.591Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: exited 
+[debug] [2020-05-05T22:16:14.591Z] [worker-completePaymentWithStripe-221f629e-df2f-49a6-9398-e8271a457a4e]: FINISHED 
+[debug] [2020-05-05T22:16:20.453Z] [runtime-status] [78319] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T22:16:20.455Z] [runtime-status] [78319] Disabled runtime features: undefined 
+[debug] [2020-05-05T22:16:20.456Z] [runtime-status] [78319] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:16:20.457Z] [runtime-status] [78319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:16:20.459Z] [runtime-status] [78319] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T22:16:20.892Z] [runtime-status] [78319] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T22:16:20.893Z] [runtime-status] [78319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:16:20.894Z] [runtime-status] [78319] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:16:20.894Z] [runtime-status] [78319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:16:20.894Z] [runtime-status] [78319] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T22:16:21.133Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: IDLE 
+[debug] [2020-05-05T22:17:37.988Z] File /Users/vaibhavherugu/LocalMainStreet/functions/index.js changed, reloading triggers 
+[debug] [2020-05-05T22:17:38.991Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-05T22:17:38.991Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: FINISHING 
+[debug] [2020-05-05T22:17:38.991Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-05T22:17:38.991Z] [worker-pool] Cleaned up workers for completePaymentWithStripe: 5 --> 0 
+[debug] [2020-05-05T22:17:38.996Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-05T22:17:38.997Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-05T22:17:38.997Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-05T22:17:38.997Z] [worker-~diagnostic~-8b365bae-5fab-4052-9d71-ec2a2baa031c]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78344.sock 
+[debug] [2020-05-05T22:17:38.997Z] [worker-~diagnostic~-8b365bae-5fab-4052-9d71-ec2a2baa031c]: BUSY 
+[debug] [2020-05-05T22:17:38.999Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: exited 
+[debug] [2020-05-05T22:17:38.999Z] [worker-~diagnostic~-a41b3f95-9b46-4b43-899e-35cc0cd73309]: FINISHED 
+[debug] [2020-05-05T22:17:39.318Z] [runtime-status] [78344] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T22:17:39.319Z] [runtime-status] [78344] Disabled runtime features: undefined 
+[debug] [2020-05-05T22:17:39.323Z] [runtime-status] [78344] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:17:39.323Z] [runtime-status] [78344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:17:39.326Z] [runtime-status] [78344] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T22:17:39.358Z] [runtime-status] [78344] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T22:17:39.359Z] [runtime-status] [78344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:17:39.360Z] [runtime-status] [78344] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:17:39.361Z] [runtime-status] [78344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:17:39.362Z] [runtime-status] [78344] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T22:17:39.400Z] [worker-~diagnostic~-8b365bae-5fab-4052-9d71-ec2a2baa031c]: IDLE 
+[debug] [2020-05-05T22:18:17.531Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:18:17.532Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:18:17.549Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:18:17.549Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-05T22:18:17.552Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-05T22:18:17.552Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=1 
+[debug] [2020-05-05T22:18:17.552Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:18:17.552Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:18:17.552Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: BUSY 
+[debug] [2020-05-05T22:18:17.843Z] [runtime-status] [78376] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-05T22:18:17.844Z] [runtime-status] [78376] Disabled runtime features: undefined 
+[debug] [2020-05-05T22:18:17.846Z] [runtime-status] [78376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:18:17.847Z] [runtime-status] [78376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:18:17.849Z] [runtime-status] [78376] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-05T22:18:17.878Z] [runtime-status] [78376] Checked functions.config() {"config":{}} 
+[debug] [2020-05-05T22:18:17.879Z] [runtime-status] [78376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:18:17.879Z] [runtime-status] [78376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-05T22:18:17.880Z] [runtime-status] [78376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-05T22:18:17.880Z] [runtime-status] [78376] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-05T22:18:17.907Z] [runtime-status] [78376] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:18:17.907Z] [runtime-status] [78376] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:18:17.908Z] [runtime-status] [78376] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:18:17.911Z] [runtime-status] [78376] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:18:17.934Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:18:18.086Z] [runtime-status] [78376] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:18:18.143Z] [runtime-status] [78376] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T22:18:19.229Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: IDLE 
+[debug] [2020-05-05T22:18:19.229Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:19:00.924Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:19:00.924Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:19:00.924Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:19:00.924Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:19:00.924Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:19:00.924Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: BUSY 
+[debug] [2020-05-05T22:19:00.925Z] [runtime-status] [78376] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:19:00.926Z] [runtime-status] [78376] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:19:00.926Z] [runtime-status] [78376] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:19:00.926Z] [runtime-status] [78376] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:19:00.927Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:19:00.929Z] [runtime-status] [78376] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:19:00.930Z] [runtime-status] [78376] Ephemeral server survived. 
+[info] i  functions: Finished "completePaymentWithStripe" in ~1s
+[debug] [2020-05-05T22:19:01.680Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: IDLE 
+[debug] [2020-05-05T22:19:01.681Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-05T22:48:18.939Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-05T22:48:18.940Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-05T22:48:18.940Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-05T22:48:18.940Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-05T22:48:18.940Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:48:18.940Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: BUSY 
+[debug] [2020-05-05T22:48:18.941Z] [runtime-status] [78376] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-05T22:48:18.941Z] [runtime-status] [78376] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-05T22:48:18.941Z] [runtime-status] [78376] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-05T22:48:18.941Z] [runtime-status] [78376] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_78376.sock 
+[debug] [2020-05-05T22:48:19.058Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-05T22:48:19.060Z] [runtime-status] [78376] Ephemeral server handling POST request 
+[debug] [2020-05-05T22:48:19.062Z] [runtime-status] [78376] Ephemeral server survived. 
+[info] >  StripeInvalidRequestError: Invalid integer:  {"user":"StripeInvalidRequestError: Invalid integer: "}
+[info] >      at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16) {"user":"    at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16)"}
+[info] >      at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33) {"user":"    at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33)"}
+[info] >      at Object.onceWrapper (events.js:299:28) {"user":"    at Object.onceWrapper (events.js:299:28)"}
+[info] >      at IncomingMessage.emit (events.js:215:7) {"user":"    at IncomingMessage.emit (events.js:215:7)"}
+[info] >      at endReadableNT (_stream_readable.js:1184:12) {"user":"    at endReadableNT (_stream_readable.js:1184:12)"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:80:21) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:80:21) {"}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',"}
+[info] >    raw: { {"user":"  raw: {"}
+[info] >      code: 'parameter_invalid_integer', {"user":"    code: 'parameter_invalid_integer',"}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',"}
+[info] >      message: 'Invalid integer: ', {"user":"    message: 'Invalid integer: ',"}
+[info] >      param: 'amount', {"user":"    param: 'amount',"}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',"}
+[info] >      headers: { {"user":"    headers: {"}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',"}
+[info] >        date: 'Tue, 05 May 2020 22:47:12 GMT', {"user":"      date: 'Tue, 05 May 2020 22:47:12 GMT',"}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',"}
+[info] >        'content-length': '237', {"user":"      'content-length': '237',"}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',"}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',"}
+[info] >        'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',"}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',"}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',"}
+[info] >        'request-id': 'req_yxZSqHN3q5X14T', {"user":"      'request-id': 'req_yxZSqHN3q5X14T',"}
+[info] >        'stripe-version': '2020-03-02', {"user":"      'stripe-version': '2020-03-02',"}
+[info] >        'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >      }, {"user":"    },"}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,"}
+[info] >      requestId: 'req_yxZSqHN3q5X14T' {"user":"    requestId: 'req_yxZSqHN3q5X14T'"}
+[info] >    }, {"user":"  },"}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',"}
+[info] >    code: 'parameter_invalid_integer', {"user":"  code: 'parameter_invalid_integer',"}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/parameter-invalid-integer',"}
+[info] >    param: 'amount', {"user":"  param: 'amount',"}
+[info] >    detail: undefined, {"user":"  detail: undefined,"}
+[info] >    headers: { {"user":"  headers: {"}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',"}
+[info] >      date: 'Tue, 05 May 2020 22:47:12 GMT', {"user":"    date: 'Tue, 05 May 2020 22:47:12 GMT',"}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',"}
+[info] >      'content-length': '237', {"user":"    'content-length': '237',"}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',"}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',"}
+[info] >      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"    'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',"}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',"}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',"}
+[info] >      'request-id': 'req_yxZSqHN3q5X14T', {"user":"    'request-id': 'req_yxZSqHN3q5X14T',"}
+[info] >      'stripe-version': '2020-03-02', {"user":"    'stripe-version': '2020-03-02',"}
+[info] >      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >    }, {"user":"  },"}
+[info] >    requestId: 'req_yxZSqHN3q5X14T', {"user":"  requestId: 'req_yxZSqHN3q5X14T',"}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,"}
+[info] >    charge: undefined, {"user":"  charge: undefined,"}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,"}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,"}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,"}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,"}
+[info] >    source: undefined {"user":"  source: undefined"}
+[info] >  } {"user":"}"}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-05-05T22:49:18.978Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: exited 
+[debug] [2020-05-05T22:49:18.978Z] [worker-completePaymentWithStripe-64bcc26d-b408-4c4e-b092-b20d06340fb8]: FINISHED 
+[debug] [2020-05-05T22:49:18.978Z] [work-queue] {"queueLength":0,"workRunningCount":0}

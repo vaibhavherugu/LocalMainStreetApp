@@ -1,17 +1,23 @@
-import React, { PureComponent } from 'react'
-import { KeyboardAvoidingView, View, Text, Platform, StyleSheet } from 'react-native'
-import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard'
-import { PaymentCardTextField } from 'tipsi-stripe'
-import Spoiler from '../components/Spoiler'
-import testID from '../utils/testID'
+import React, {PureComponent} from 'react';
+import {
+  KeyboardAvoidingView,
+  View,
+  Text,
+  Platform,
+  StyleSheet,
+} from 'react-native';
+import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard';
+import {PaymentCardTextField} from 'tipsi-stripe';
+import Spoiler from '../components/Spoiler';
+import testID from '../utils/testID';
 
 const ContainerView = Platform.select({
   ios: KeyboardAvoidingView,
   android: View,
-})
+});
 
 export default class CardTextFieldScreen extends PureComponent {
-  static title = 'Card Text Field'
+  static title = 'Card Text Field';
 
   state = {
     valid: false,
@@ -21,17 +27,17 @@ export default class CardTextFieldScreen extends PureComponent {
       expYear: 0,
       cvc: '',
     },
-  }
+  };
 
   handleFieldParamsChange = (valid, params) => {
     this.setState({
       valid,
       params,
-    })
-  }
+    });
+  };
 
   render() {
-    const { valid, params } = this.state
+    const {valid, params} = this.state;
 
     return (
       <ContainerView
@@ -40,9 +46,7 @@ export default class CardTextFieldScreen extends PureComponent {
         onResponderGrant={dismissKeyboard}
         onStartShouldSetResponder={() => true}>
         <View>
-          <Text style={styles.header}>
-            PaymentCardTextField Example
-          </Text>
+          <Text style={styles.header}>PaymentCardTextField Example</Text>
           <PaymentCardTextField
             accessible={false}
             style={styles.field}
@@ -53,38 +57,27 @@ export default class CardTextFieldScreen extends PureComponent {
             {...testID('cardTextField')}
           />
           <Spoiler title="Params" style={styles.spoiler}>
-            <View
-              style={styles.params}>
-              <Text
-                style={styles.instruction}
-                {...testID('paramValid')}>
+            <View style={styles.params}>
+              <Text style={styles.instruction} {...testID('paramValid')}>
                 Valid: {String(valid)}
               </Text>
-              <Text
-                style={styles.instruction}
-                {...testID('paramNumber')}>
+              <Text style={styles.instruction} {...testID('paramNumber')}>
                 Number: {params.number || '-'}
               </Text>
-              <Text
-                style={styles.instruction}
-                {...testID('paramExpMonth')}>
+              <Text style={styles.instruction} {...testID('paramExpMonth')}>
                 Month: {params.expMonth || '-'}
               </Text>
-              <Text
-                style={styles.instruction}
-                {...testID('paramExpYear')}>
+              <Text style={styles.instruction} {...testID('paramExpYear')}>
                 Year: {params.expYear || '-'}
               </Text>
-              <Text
-                style={styles.instruction}
-                {...testID('paramCVC')}>
+              <Text style={styles.instruction} {...testID('paramCVC')}>
                 CVC: {params.cvc || '-'}
               </Text>
             </View>
           </Spoiler>
         </View>
       </ContainerView>
-    )
+    );
   }
 }
 
@@ -126,4 +119,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     overflow: 'hidden',
   },
-})
+});
