@@ -9,6 +9,7 @@ import {
   TextInput,
   TouchableOpacity,
   Linking,
+  Button,
 } from 'react-native';
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
@@ -21,7 +22,6 @@ class ScanScreen extends Component {
       balance: {},
       amount: '',
       text: ``,
-      testboi: '',
     };
   }
   onSuccess = (e) => {
@@ -29,10 +29,11 @@ class ScanScreen extends Component {
       const data = JSON.parse(e.data);
       const nameq = data.nameq;
       const balance = data.balance;
+      const id = data._id;
       this.setState({
         nameq: nameq,
         balance: balance,
-        text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars!`,
+        text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars! id=${id}`,
       });
       const alerts = {
         data: {
@@ -48,6 +49,24 @@ class ScanScreen extends Component {
   handleAmount = (number) => {
     this.setState({amount: number});
   };
+  amountpaid = () => {
+    const payloadupdated = {
+      nameq: this.state.nameq,
+      balance: this.state.balance - this.state.amount,
+    };
+
+    axios
+      .patch(
+        'https://localmainstreetbackend.herokuapp.com/app/qrcode',
+        payloadupdated,
+      )
+      .then((res) => {
+        alert(res);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  };
   render() {
     const {navigate} = this.props.navigation;
     // const nameq = this.state.nameq.map((name))
@@ -56,16 +75,19 @@ class ScanScreen extends Component {
         onRead={this.onSuccess}
         flashMode={Camera.Constants.FlashMode.auto}
         topContent={
-          <TextInput
-            style={styles.input2}
-            underlineColorAndroid="transparent"
-            placeholder="Amount Paid"
-            placeholderTextColor="#000000"
-            autoCapitalize="none"
-            onChangeText={this.handleAmount}
-          />
+          <View>
+            <TextInput
+              style={styles.input2}
+              underlineColorAndroid="transparent"
+              placeholder="Amount Paid"
+              placeholderTextColor="#000000"
+              autoCapitalize="none"
+              onChangeText={this.handleAmount}
+            />
+            <Button title="Submit" onPress={this.amountpaid}></Button>
+          </View>
         }
-        bottomContent={<Text>{this.state.text}</Text>}
+        bottomContent={<Text style={styles.texts}>{this.state.text}</Text>}
       />
     );
   }
@@ -105,6 +127,10 @@ const styles = StyleSheet.create({
   background: {
     backgroundColor: '#ffffff',
     // marginBottom: 100
+  },
+  texts: {
+    fontSize: 30,
+    textAlign: 'center',
   },
 });
 export default ScanScreen;
