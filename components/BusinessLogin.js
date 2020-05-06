@@ -16,7 +16,7 @@ import {
   AsyncStorage,
 } from 'react-native';
 
-class LoginScreen extends React.Component {
+class BLoginScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -69,7 +69,7 @@ class LoginScreen extends React.Component {
     return (
       <View style={styles.viewForSearch}>
         <StatusBar barStyle="dark-content" />
-        <Text style={styles.header}>Customer Login</Text>
+        <Text style={styles.header}>Business Login</Text>
         <TextInput
           style={styles.input2}
           underlineColorAndroid="transparent"
@@ -89,15 +89,19 @@ class LoginScreen extends React.Component {
           onChangeText={this.handlePW}
         />
 
-        <TouchableOpacity style={styles.buttons} onPress={this.onLogin}>
+        <TouchableOpacity
+          style={styles.buttons}
+          onPress={() => {
+            navigate('Buttons');
+          }}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonsUnderLogin}
           onPress={() => {
-            navigate('Login as a Business');
+            navigate('Login');
           }}>
-          <Text style={styles.buttonTextForSignUp}>Login as a Business</Text>
+          <Text style={styles.buttonTextForSignUp}>Login as a Customer</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonsUnderLogin}
@@ -171,4 +175,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default BLoginScreen;

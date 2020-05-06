@@ -24,7 +24,7 @@ class ButtonScreen extends React.Component {
           onPress={() => {
             navigate('Home');
           }}>
-          <Text style={styles.buttonText}>Home</Text>
+          <Text style={styles.buttonText}>Dashboard</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttons}

@@ -84,14 +84,19 @@ class AmountScreen extends React.Component {
         currency: 'usd',
         token: this.state.token,
       },
-    }).then((response) => {
-      console.log(response);
-      alert('Payment processed!');
-      this.setState({loading: false});
-      setTimeout(() => {
-        this.props.navigation.navigate('Buttons');
-      }, 1500);
-    });
+    })
+      .then((response) => {
+        console.log(response);
+        alert('Payment processed!');
+        this.setState({loading: false});
+        setTimeout(() => {
+          this.props.navigation.navigate('Buttons');
+        }, 1500);
+      })
+      .catch((error) => {
+        alert('Invalid.');
+        console.log(error);
+      });
   };
 
   render() {

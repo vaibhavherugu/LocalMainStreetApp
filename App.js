@@ -8,12 +8,15 @@ import ContactScreen from './components/ContactScreen';
 import ShopScreen from './components/ShopScreen';
 import ButtonScreen from './components/ButtonScreen';
 import LoginScreen from './components/LoginScreen';
+import BLoginScreen from './components/BusinessLogin';
 import SignUpScreen from './components/SignUp';
 import ForgotPassScreen from './components/ForgotPassword';
 import HelpScreen from './components/Help';
 import ScanScreen from './components/ScanScreen';
 import PinScreen from './components/PinScreen';
 import AmountScreen from './components/AmountScreen';
+import BRegister from './components/BRegister';
+import CRegister from './components/CRegister';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +46,11 @@ class App extends React.Component {
             options={{title: 'Reset Password'}}
           />
           <Stack.Screen
+            name="Register as a Customer"
+            component={CRegister}
+            options={{title: 'Register as a Customer'}}
+          />
+          <Stack.Screen
             name="Sign Up"
             component={SignUpScreen}
             options={{title: 'Sign Up'}}
@@ -66,6 +74,16 @@ class App extends React.Component {
             name="Buy Gift Cards"
             component={ShopScreen}
             options={{title: 'Buy Gift Cards'}}
+          />
+          <Stack.Screen
+            name="Login as a Business"
+            component={BLoginScreen}
+            options={{title: 'Login as a Business'}}
+          />
+          <Stack.Screen
+            name="Register as a Business"
+            component={BRegister}
+            options={{title: 'Register as a Business'}}
           />
           <Stack.Screen
             name="Login"

@@ -42,3 +42,208 @@
 [debug] [2020-05-06T00:00:25.877Z] [runtime-status] [78759] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
 [info] ✔  functions[completePaymentWithStripe]: http function initialized (http://localhost:5000/localmainstreet-b0144/us-central1/completePaymentWithStripe).
 [debug] [2020-05-06T00:00:26.783Z] [worker-~diagnostic~-6dd2c98b-2480-4a41-a431-63d673009c74]: IDLE 
+[debug] [2020-05-06T15:17:28.484Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-06T15:17:28.498Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-06T15:17:28.535Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-06T15:17:28.572Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-06T15:17:28.573Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=1 
+[debug] [2020-05-06T15:17:28.573Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-06T15:17:28.573Z] [worker-completePaymentWithStripe-a6cb11f3-7808-473c-bf8b-9af8caf76713]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_80808.sock 
+[debug] [2020-05-06T15:17:28.573Z] [worker-completePaymentWithStripe-a6cb11f3-7808-473c-bf8b-9af8caf76713]: BUSY 
+[debug] [2020-05-06T15:17:33.789Z] [runtime-status] [80808] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-06T15:17:33.790Z] [runtime-status] [80808] Disabled runtime features: undefined 
+[debug] [2020-05-06T15:17:33.921Z] [runtime-status] [80808] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-06T15:17:33.921Z] [runtime-status] [80808] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:17:33.922Z] [runtime-status] [80808] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-06T15:17:34.791Z] [runtime-status] [80808] Checked functions.config() {"config":{}} 
+[debug] [2020-05-06T15:17:34.791Z] [runtime-status] [80808] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:17:34.792Z] [runtime-status] [80808] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-06T15:17:34.793Z] [runtime-status] [80808] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:17:34.793Z] [runtime-status] [80808] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-06T15:17:35.210Z] [runtime-status] [80808] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-06T15:17:35.212Z] [runtime-status] [80808] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-06T15:17:35.212Z] [runtime-status] [80808] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-06T15:17:35.214Z] [runtime-status] [80808] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_80808.sock 
+[debug] [2020-05-06T15:17:35.307Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-06T15:17:35.552Z] [runtime-status] [80808] Ephemeral server handling POST request 
+[debug] [2020-05-06T15:17:35.608Z] [runtime-status] [80808] Ephemeral server survived. 
+[info] >  StripeInvalidRequestError: Amount must be no more than $999,999.99 {"user":"StripeInvalidRequestError: Amount must be no more than $999,999.99"}
+[info] >      at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16) {"user":"    at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16)"}
+[info] >      at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33) {"user":"    at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33)"}
+[info] >      at Object.onceWrapper (events.js:299:28) {"user":"    at Object.onceWrapper (events.js:299:28)"}
+[info] >      at IncomingMessage.emit (events.js:215:7) {"user":"    at IncomingMessage.emit (events.js:215:7)"}
+[info] >      at endReadableNT (_stream_readable.js:1184:12) {"user":"    at endReadableNT (_stream_readable.js:1184:12)"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:80:21) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:80:21) {"}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',"}
+[info] >    raw: { {"user":"  raw: {"}
+[info] >      code: 'amount_too_large', {"user":"    code: 'amount_too_large',"}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/amount-too-large', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/amount-too-large',"}
+[info] >      message: 'Amount must be no more than $999,999.99', {"user":"    message: 'Amount must be no more than $999,999.99',"}
+[info] >      param: 'amount', {"user":"    param: 'amount',"}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',"}
+[info] >      headers: { {"user":"    headers: {"}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',"}
+[info] >        date: 'Wed, 06 May 2020 15:16:27 GMT', {"user":"      date: 'Wed, 06 May 2020 15:16:27 GMT',"}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',"}
+[info] >        'content-length': '241', {"user":"      'content-length': '241',"}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',"}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',"}
+[info] >        'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',"}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',"}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',"}
+[info] >        'request-id': 'req_Vt9ZUyrUX3cE5I', {"user":"      'request-id': 'req_Vt9ZUyrUX3cE5I',"}
+[info] >        'stripe-version': '2020-03-02', {"user":"      'stripe-version': '2020-03-02',"}
+[info] >        'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >      }, {"user":"    },"}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,"}
+[info] >      requestId: 'req_Vt9ZUyrUX3cE5I' {"user":"    requestId: 'req_Vt9ZUyrUX3cE5I'"}
+[info] >    }, {"user":"  },"}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',"}
+[info] >    code: 'amount_too_large', {"user":"  code: 'amount_too_large',"}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/amount-too-large', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/amount-too-large',"}
+[info] >    param: 'amount', {"user":"  param: 'amount',"}
+[info] >    detail: undefined, {"user":"  detail: undefined,"}
+[info] >    headers: { {"user":"  headers: {"}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',"}
+[info] >      date: 'Wed, 06 May 2020 15:16:27 GMT', {"user":"    date: 'Wed, 06 May 2020 15:16:27 GMT',"}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',"}
+[info] >      'content-length': '241', {"user":"    'content-length': '241',"}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',"}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',"}
+[info] >      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"    'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',"}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',"}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',"}
+[info] >      'request-id': 'req_Vt9ZUyrUX3cE5I', {"user":"    'request-id': 'req_Vt9ZUyrUX3cE5I',"}
+[info] >      'stripe-version': '2020-03-02', {"user":"    'stripe-version': '2020-03-02',"}
+[info] >      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >    }, {"user":"  },"}
+[info] >    requestId: 'req_Vt9ZUyrUX3cE5I', {"user":"  requestId: 'req_Vt9ZUyrUX3cE5I',"}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,"}
+[info] >    charge: undefined, {"user":"  charge: undefined,"}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,"}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,"}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,"}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,"}
+[info] >    source: undefined {"user":"  source: undefined"}
+[info] >  } {"user":"}"}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-05-06T15:18:37.784Z] [worker-completePaymentWithStripe-a6cb11f3-7808-473c-bf8b-9af8caf76713]: exited 
+[debug] [2020-05-06T15:18:37.784Z] [worker-completePaymentWithStripe-a6cb11f3-7808-473c-bf8b-9af8caf76713]: FINISHED 
+[debug] [2020-05-06T15:18:37.784Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-06T15:25:59.211Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-06T15:25:59.211Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-06T15:25:59.211Z] Accepted request POST /localmainstreet-b0144/us-central1/completePaymentWithStripe --> completePaymentWithStripe
+[debug] [2020-05-06T15:25:59.211Z] [worker-pool] Cleaned up workers for completePaymentWithStripe: 1 --> 0 
+[debug] [2020-05-06T15:25:59.295Z] [worker-pool] addWorker(completePaymentWithStripe) 
+[debug] [2020-05-06T15:25:59.295Z] [worker-pool] Adding worker with key completePaymentWithStripe, total=1 
+[debug] [2020-05-06T15:25:59.295Z] [worker-pool] submitWork(triggerId=completePaymentWithStripe) 
+[debug] [2020-05-06T15:25:59.306Z] [worker-completePaymentWithStripe-e3eeb372-0e97-4a42-9a1a-efa58abb60e7]: Assigning socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_81000.sock 
+[debug] [2020-05-06T15:25:59.306Z] [worker-completePaymentWithStripe-e3eeb372-0e97-4a42-9a1a-efa58abb60e7]: BUSY 
+[debug] [2020-05-06T15:26:04.686Z] [runtime-status] [81000] Functions runtime initialized. {"cwd":"/Users/vaibhavherugu/LocalMainStreet/functions","node_version":"12.13.1"} 
+[debug] [2020-05-06T15:26:04.687Z] [runtime-status] [81000] Disabled runtime features: undefined 
+[debug] [2020-05-06T15:26:04.759Z] [runtime-status] [81000] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-06T15:26:04.776Z] [runtime-status] [81000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:26:04.778Z] [runtime-status] [81000] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-06T15:26:05.540Z] [runtime-status] [81000] Checked functions.config() {"config":{}} 
+[debug] [2020-05-06T15:26:05.540Z] [runtime-status] [81000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:26:05.541Z] [runtime-status] [81000] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-06T15:26:05.686Z] [runtime-status] [81000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-06T15:26:05.686Z] [runtime-status] [81000] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-06T15:26:05.916Z] [runtime-status] [81000] Trigger "completePaymentWithStripe" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "completePaymentWithStripe"
+[debug] [2020-05-06T15:26:05.917Z] [runtime-status] [81000] triggerDefinition {"httpsTrigger":{},"name":"completePaymentWithStripe","entryPoint":"completePaymentWithStripe"} 
+[debug] [2020-05-06T15:26:05.917Z] [runtime-status] [81000] Running completePaymentWithStripe in mode HTTPS 
+[debug] [2020-05-06T15:26:05.920Z] [runtime-status] [81000] Attempting to listen to socketPath: /var/folders/zz/5sqr5d257db57ws4v_zfjw200000gn/T/fire_emu_81000.sock 
+[debug] [2020-05-06T15:26:05.958Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-06T15:26:06.182Z] [runtime-status] [81000] Ephemeral server handling POST request 
+[debug] [2020-05-06T15:26:06.205Z] [runtime-status] [81000] Ephemeral server survived. 
+[info] >  StripeInvalidRequestError: Amount must be no more than $999,999.99 {"user":"StripeInvalidRequestError: Amount must be no more than $999,999.99"}
+[info] >      at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16) {"user":"    at Function.generate (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/Error.js:39:16)"}
+[info] >      at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33) {"user":"    at IncomingMessage.<anonymous> (/Users/vaibhavherugu/LocalMainStreet/functions/node_modules/stripe/lib/StripeResource.js:175:33)"}
+[info] >      at Object.onceWrapper (events.js:299:28) {"user":"    at Object.onceWrapper (events.js:299:28)"}
+[info] >      at IncomingMessage.emit (events.js:215:7) {"user":"    at IncomingMessage.emit (events.js:215:7)"}
+[info] >      at endReadableNT (_stream_readable.js:1184:12) {"user":"    at endReadableNT (_stream_readable.js:1184:12)"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:80:21) { {"user":"    at processTicksAndRejections (internal/process/task_queues.js:80:21) {"}
+[info] >    type: 'StripeInvalidRequestError', {"user":"  type: 'StripeInvalidRequestError',"}
+[info] >    raw: { {"user":"  raw: {"}
+[info] >      code: 'amount_too_large', {"user":"    code: 'amount_too_large',"}
+[info] >      doc_url: 'https://stripe.com/docs/error-codes/amount-too-large', {"user":"    doc_url: 'https://stripe.com/docs/error-codes/amount-too-large',"}
+[info] >      message: 'Amount must be no more than $999,999.99', {"user":"    message: 'Amount must be no more than $999,999.99',"}
+[info] >      param: 'amount', {"user":"    param: 'amount',"}
+[info] >      type: 'invalid_request_error', {"user":"    type: 'invalid_request_error',"}
+[info] >      headers: { {"user":"    headers: {"}
+[info] >        server: 'nginx', {"user":"      server: 'nginx',"}
+[info] >        date: 'Wed, 06 May 2020 15:24:57 GMT', {"user":"      date: 'Wed, 06 May 2020 15:24:57 GMT',"}
+[info] >        'content-type': 'application/json', {"user":"      'content-type': 'application/json',"}
+[info] >        'content-length': '241', {"user":"      'content-length': '241',"}
+[info] >        connection: 'keep-alive', {"user":"      connection: 'keep-alive',"}
+[info] >        'access-control-allow-credentials': 'true', {"user":"      'access-control-allow-credentials': 'true',"}
+[info] >        'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >        'access-control-allow-origin': '*', {"user":"      'access-control-allow-origin': '*',"}
+[info] >        'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >        'access-control-max-age': '300', {"user":"      'access-control-max-age': '300',"}
+[info] >        'cache-control': 'no-cache, no-store', {"user":"      'cache-control': 'no-cache, no-store',"}
+[info] >        'request-id': 'req_K4Krv6Yd9oVTo9', {"user":"      'request-id': 'req_K4Krv6Yd9oVTo9',"}
+[info] >        'stripe-version': '2020-03-02', {"user":"      'stripe-version': '2020-03-02',"}
+[info] >        'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >      }, {"user":"    },"}
+[info] >      statusCode: 400, {"user":"    statusCode: 400,"}
+[info] >      requestId: 'req_K4Krv6Yd9oVTo9' {"user":"    requestId: 'req_K4Krv6Yd9oVTo9'"}
+[info] >    }, {"user":"  },"}
+[info] >    rawType: 'invalid_request_error', {"user":"  rawType: 'invalid_request_error',"}
+[info] >    code: 'amount_too_large', {"user":"  code: 'amount_too_large',"}
+[info] >    doc_url: 'https://stripe.com/docs/error-codes/amount-too-large', {"user":"  doc_url: 'https://stripe.com/docs/error-codes/amount-too-large',"}
+[info] >    param: 'amount', {"user":"  param: 'amount',"}
+[info] >    detail: undefined, {"user":"  detail: undefined,"}
+[info] >    headers: { {"user":"  headers: {"}
+[info] >      server: 'nginx', {"user":"    server: 'nginx',"}
+[info] >      date: 'Wed, 06 May 2020 15:24:57 GMT', {"user":"    date: 'Wed, 06 May 2020 15:24:57 GMT',"}
+[info] >      'content-type': 'application/json', {"user":"    'content-type': 'application/json',"}
+[info] >      'content-length': '241', {"user":"    'content-length': '241',"}
+[info] >      connection: 'keep-alive', {"user":"    connection: 'keep-alive',"}
+[info] >      'access-control-allow-credentials': 'true', {"user":"    'access-control-allow-credentials': 'true',"}
+[info] >      'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE', {"user":"    'access-control-allow-methods': 'GET, POST, HEAD, OPTIONS, DELETE',"}
+[info] >      'access-control-allow-origin': '*', {"user":"    'access-control-allow-origin': '*',"}
+[info] >      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required', {"user":"    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',"}
+[info] >      'access-control-max-age': '300', {"user":"    'access-control-max-age': '300',"}
+[info] >      'cache-control': 'no-cache, no-store', {"user":"    'cache-control': 'no-cache, no-store',"}
+[info] >      'request-id': 'req_K4Krv6Yd9oVTo9', {"user":"    'request-id': 'req_K4Krv6Yd9oVTo9',"}
+[info] >      'stripe-version': '2020-03-02', {"user":"    'stripe-version': '2020-03-02',"}
+[info] >      'strict-transport-security': 'max-age=31556926; includeSubDomains; preload' {"user":"    'strict-transport-security': 'max-age=31556926; includeSubDomains; preload'"}
+[info] >    }, {"user":"  },"}
+[info] >    requestId: 'req_K4Krv6Yd9oVTo9', {"user":"  requestId: 'req_K4Krv6Yd9oVTo9',"}
+[info] >    statusCode: 400, {"user":"  statusCode: 400,"}
+[info] >    charge: undefined, {"user":"  charge: undefined,"}
+[info] >    decline_code: undefined, {"user":"  decline_code: undefined,"}
+[info] >    payment_intent: undefined, {"user":"  payment_intent: undefined,"}
+[info] >    payment_method: undefined, {"user":"  payment_method: undefined,"}
+[info] >    setup_intent: undefined, {"user":"  setup_intent: undefined,"}
+[info] >    source: undefined {"user":"  source: undefined"}
+[info] >  } {"user":"}"}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-05-06T15:27:05.945Z] [worker-completePaymentWithStripe-e3eeb372-0e97-4a42-9a1a-efa58abb60e7]: exited 
+[debug] [2020-05-06T15:27:05.945Z] [worker-completePaymentWithStripe-e3eeb372-0e97-4a42-9a1a-efa58abb60e7]: FINISHED 
+[debug] [2020-05-06T15:27:05.945Z] [work-queue] {"queueLength":0,"workRunningCount":0}

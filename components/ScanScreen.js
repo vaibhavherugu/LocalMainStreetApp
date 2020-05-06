@@ -78,12 +78,8 @@ class ScanScreen extends Component {
         alert(err);
       });
 
-    if (Number(databasecheck.balance) === 0) {
-      alert('User balance is 0 dollars. Invalid.');
-    } else if (Number(databasecheck.balance) <= 0) {
-      alert('User owes money.');
-    } else if (payloadupdated.balance < 0) {
-      alert('Not enough money on the gift card');
+    if (Number(databasecheck.balance) <= 0) {
+      alert('Insufficient funds.');
     } else {
       axios
         .patch(
