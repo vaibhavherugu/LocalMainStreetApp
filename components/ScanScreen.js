@@ -14,6 +14,10 @@ import {
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import {RNCamera as Camera} from 'react-native-camera';
+
+var id;
+var databasecheck;
+
 class ScanScreen extends Component {
   constructor(props) {
     super(props);
@@ -24,23 +28,33 @@ class ScanScreen extends Component {
       text: ``,
     };
   }
-  onSuccess = (e) => {
+  onSuccess = async (e) => {
     try {
       const data = JSON.parse(e.data);
       const nameq = data.nameq;
       const balance = data.balance;
-      const id = data._id;
-      this.setState({
-        nameq: nameq,
-        balance: balance,
-        text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars! id=${id}`,
-      });
-      const alerts = {
-        data: {
-          balance: balance,
+      id = data._id;
+
+      await axios
+        .get('https://localmainstreetbackend.herokuapp.com/app/qrcode/')
+        .then((res) => {
+          databasecheck = res.data[res.data.length - 1];
+        })
+        .catch((err) => {
+          alert(err);
+        });
+
+      if (Number(databasecheck.balance) === 0) {
+        alert('User balance is 0 dollars. Invalid.');
+      } else if (Number(databasecheck.balance) <= 0) {
+        alert('User owes money.');
+      } else {
+        this.setState({
           nameq: nameq,
-        },
-      };
+          balance: balance,
+          text: `Sucess! ${nameq}'s gift card balance is ${balance} dollars!`,
+        });
+      }
     } catch (err) {
       alert('Invalid QR Code.');
     }
@@ -49,23 +63,41 @@ class ScanScreen extends Component {
   handleAmount = (number) => {
     this.setState({amount: number});
   };
-  amountpaid = () => {
+  amountpaid = async () => {
     const payloadupdated = {
       nameq: this.state.nameq,
       balance: this.state.balance - this.state.amount,
     };
 
-    axios
-      .patch(
-        'https://localmainstreetbackend.herokuapp.com/app/qrcode',
-        payloadupdated,
-      )
+    await axios
+      .get('https://localmainstreetbackend.herokuapp.com/app/qrcode/')
       .then((res) => {
-        alert(res);
+        databasecheck = res.data[res.data.length - 1];
       })
       .catch((err) => {
         alert(err);
       });
+
+    if (Number(databasecheck.balance) === 0) {
+      alert('User balance is 0 dollars. Invalid.');
+    } else if (Number(databasecheck.balance) <= 0) {
+      alert('User owes money.');
+    } else if (payloadupdated.balance < 0) {
+      alert('Not enough money on the gift card');
+    } else {
+      axios
+        .patch(
+          `https://localmainstreetbackend.herokuapp.com/app/qrcode/` + id,
+          payloadupdated,
+        )
+        .then((res) => {
+          console.log(res);
+          alert('Success');
+        })
+        .catch((err) => {
+          alert(err);
+        });
+    }
   };
   render() {
     const {navigate} = this.props.navigation;
