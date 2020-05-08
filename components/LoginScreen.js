@@ -16,12 +16,16 @@ import {
   AsyncStorage,
 } from 'react-native';
 
+var emails;
+
 class LoginScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       username: '',
       password: '',
+      fname: '',
+      lname: '',
     };
   }
   handleUS = (text) => {
@@ -31,13 +35,13 @@ class LoginScreen extends React.Component {
     this.setState({password: text});
   };
 
-  onLogin = (e) => {
+  onLogin = async (e) => {
     e.preventDefault();
     const payload = {
       email: this.state.username,
       password: this.state.password,
     };
-    axios
+    await axios
       .post(
         'https://localmainstreetbackend.herokuapp.com/app/LoginAPI/login',
         payload,
@@ -51,16 +55,71 @@ class LoginScreen extends React.Component {
         console.log(tokenval);
 
         if (!tokenval) {
-          alert('Incorrect email or password.');
+          alert('Incorrect login credentials. Please try again.');
         }
+        emails = this.state.email;
         this.props.navigation.navigate('Buttons');
       })
       .catch(function (err) {
         if (err === 'Error: Request failed with status code 404') {
           alert('Incorrect login credentials. Please try again.');
         } else {
-          alert(err);
+          alert('Incorrect login credentials. Please try again.');
         }
+      });
+    const emailCheck = {
+      email: emails,
+    };
+    await axios
+      .post(
+        'https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts',
+        emailCheck,
+      )
+      .then((response) => {
+        if (response.email === this.state.email) {
+          const name = {
+            fname: response.fname,
+            lname: response.lname,
+          };
+        }
+        const data = response.data;
+        console.log('##res', response);
+        setTimeout(() => {
+          this.setState({
+            fname: data.fname,
+            lname: data.lname,
+          });
+        }, 1000);
+        alert(this.state.fname);
+        alert(this.state.lname);
+        console.log('##names', this.state.fname, this.state.lname);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert(err);
+      });
+  };
+
+  saveName = async (e) => {
+    e.preventDefault();
+    await axios
+      .get('https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts')
+      .then((response) => {
+        const data = response.data;
+        console.log(response);
+        setTimeout(() => {
+          this.setState({
+            fname: data.fname,
+            lname: data.lname,
+          });
+        }, 1000);
+        alert(this.state.fname);
+        alert(this.state.lname);
+        console.log('##names', this.state.fname, this.state.lname);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert(err);
       });
   };
 

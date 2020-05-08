@@ -17,6 +17,8 @@ import PinScreen from './components/PinScreen';
 import AmountScreen from './components/AmountScreen';
 import BRegister from './components/BRegister';
 import CRegister from './components/CRegister';
+import ChoiceScreen from './components/ChoiceScreen';
+import PayPal from './components/PayPal';
 
 const Stack = createStackNavigator();
 
@@ -56,9 +58,14 @@ class App extends React.Component {
             options={{title: 'Sign Up'}}
           />
           <Stack.Screen
-            name="Home"
+            name="Dashboard"
             component={HomeScreen}
-            options={{title: 'Home'}}
+            options={{title: 'Dashboard'}}
+          />
+          <Stack.Screen
+            name="Payment Gateways"
+            component={ChoiceScreen}
+            options={{title: 'Payment Gateways'}}
           />
           <Stack.Screen
             name="About"
@@ -96,9 +103,14 @@ class App extends React.Component {
             options={{title: 'Confirmation PIN'}}
           />
           <Stack.Screen
-            name="Checkout"
+            name="Stripe Checkout"
             component={AmountScreen}
-            options={{title: 'Checkout'}}
+            options={{title: 'Stripe Checkout'}}
+          />
+          <Stack.Screen
+            name="PayPal Checkout"
+            component={PayPal}
+            options={{title: 'PayPal Checkout'}}
           />
         </Stack.Navigator>
       </NavigationContainer>

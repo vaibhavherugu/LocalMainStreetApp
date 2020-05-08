@@ -14,7 +14,7 @@ import {
   StatusBar,
 } from 'react-native';
 
-class ButtonScreen extends React.Component {
+class ChoiceScreen extends React.Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
@@ -22,35 +22,16 @@ class ButtonScreen extends React.Component {
         <TouchableOpacity
           style={styles.homeButton}
           onPress={() => {
-            navigate('Dashboard');
+            navigate('Stripe Checkout');
           }}>
-          <Text style={styles.buttonText}>Dashboard</Text>
+          <Text style={styles.buttonText}>Pay With Stripe</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => {
-            navigate('Buy Gift Cards');
+            navigate('PayPal Checkout');
           }}>
-          <Text style={styles.buttonText}>Buy a Gift Card</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.buttons}
-          onPress={() => {
-            navigate('Scan Gift Cards');
-          }}>
-          <Text style={styles.buttonText}>Scan A Gift Card</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigate('About');
-          }}>
-          <Text style={styles.buttonTextAbove}>About Us</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Login');
-          }}>
-          <Text style={styles.buttonTextUnder}>Logout</Text>
+          <Text style={styles.buttonText}>Pay with PayPal</Text>
         </TouchableOpacity>
       </ScrollView>
     );
@@ -62,24 +43,24 @@ const styles = StyleSheet.create({
   },
 
   buttons: {
-    height: 150,
+    height: 100,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 5,
-    width: 360,
+    width: 300,
     opacity: 1,
     backgroundColor: '#000000',
     borderRadius: 15,
     alignSelf: 'center',
   },
   homeButton: {
-    height: 150,
+    height: 100,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 5,
-    width: 360,
+    width: 300,
     opacity: 1,
     backgroundColor: '#000000',
     borderRadius: 15,
@@ -107,4 +88,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ButtonScreen;
+export default ChoiceScreen;

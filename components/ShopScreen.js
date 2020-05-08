@@ -101,7 +101,7 @@ class ShopScreen extends React.Component {
                   text="Buy Now"
                   loading={loading}
                   onPress={() => {
-                    navigate('Checkout', {
+                    navigate('Payment Gateways', {
                       bname: user.item.bname,
                       bdesc: user.item.bdesc,
                     });
