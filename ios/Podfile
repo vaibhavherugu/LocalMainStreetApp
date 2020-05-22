@@ -55,6 +55,10 @@ target 'LocalMainStreet' do
 
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'LocalMainStreetTests' do
     inherit! :search_paths
     # Pods for testing

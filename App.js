@@ -19,6 +19,7 @@ import BRegister from './components/BRegister';
 import CRegister from './components/CRegister';
 import ChoiceScreen from './components/ChoiceScreen';
 import PayPal from './components/PayPal';
+import Navigator from './components/routes/shopStack';
 
 const Stack = createStackNavigator();
 

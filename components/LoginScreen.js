@@ -47,7 +47,7 @@ class LoginScreen extends React.Component {
         payload,
       )
       .then((response) => {
-        console.log(response);
+        console.log('##res', response);
         if (response.status === 200) {
           AsyncStorage.setItem('token', response.data);
         }
@@ -58,7 +58,7 @@ class LoginScreen extends React.Component {
           alert('Incorrect login credentials. Please try again.');
         }
         emails = this.state.email;
-        this.props.navigation.navigate('Buttons');
+        this.props.navigation.navigate('Dashboard');
       })
       .catch(function (err) {
         if (err === 'Error: Request failed with status code 404') {
@@ -67,62 +67,54 @@ class LoginScreen extends React.Component {
           alert('Incorrect login credentials. Please try again.');
         }
       });
-    const emailCheck = {
-      email: emails,
-    };
-    await axios
-      .post(
-        'https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts',
-        emailCheck,
-      )
-      .then((response) => {
-        if (response.email === this.state.email) {
-          const name = {
-            fname: response.fname,
-            lname: response.lname,
-          };
-        }
-        const data = response.data;
-        console.log('##res', response);
-        setTimeout(() => {
-          this.setState({
-            fname: data.fname,
-            lname: data.lname,
-          });
-        }, 1000);
-        alert(this.state.fname);
-        alert(this.state.lname);
-        console.log('##names', this.state.fname, this.state.lname);
-      })
-      .catch((err) => {
-        console.log(err);
-        alert(err);
-      });
+    // await axios
+    //   .get(
+    //     'https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts',
+    //   )
+    //   .then((response) => {
+    //     if (response.email === this.state.email) {
+    //       const name = {
+    //         fname: response.fname,
+    //         lname: response.lname,
+    //       };
+    //       console.log('##res', response);
+    //       setTimeout(() => {
+    //         this.setState({
+    //           fname: name.fname,
+    //           lname: name.lname,
+    //         });
+    //       }, 1000);
+    //       console.log('##names', this.state.fname, this.state.lname);
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //     alert(err);
+    //   });
   };
 
-  saveName = async (e) => {
-    e.preventDefault();
-    await axios
-      .get('https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts')
-      .then((response) => {
-        const data = response.data;
-        console.log(response);
-        setTimeout(() => {
-          this.setState({
-            fname: data.fname,
-            lname: data.lname,
-          });
-        }, 1000);
-        alert(this.state.fname);
-        alert(this.state.lname);
-        console.log('##names', this.state.fname, this.state.lname);
-      })
-      .catch((err) => {
-        console.log(err);
-        alert(err);
-      });
-  };
-
+  // saveName = async (e) => {
+  //   e.preventDefault();
+  //   await axios
+  //     .get('https://localmainstreetbackend.herokuapp.com/app/LoginAPI/posts')
+  //     .then((response) => {
+  //       const data = response.data;
+  //       console.log(response);
+  //       setTimeout(() => {
+  //         this.setState({
+  //           fname: data.fname,
+  //           lname: data.lname,
+  //         });
+  //       }, 1000);
+  //       alert(this.state.fname);
+  //       alert(this.state.lname);
+  //       console.log('##names', this.state.fname, this.state.lname);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       alert(err);
+  //     });
+  // };
   render() {
     const {navigate} = this.props.navigation;
     return (

@@ -22,7 +22,7 @@ import {
 } from 'react-native';
 import {cos} from 'react-native-reanimated';
 stripe.setOptions({
-  publishableKey: 'pk_test_KkfXWjgjLwtNgUTOjtn25pj4005QCLSJ6I',
+  publishableKey: 'pk_live_tWDEYH9zMiZ90sGivLAPZPUO00ZbTmwDF3',
 });
 
 class AmountScreen extends React.Component {

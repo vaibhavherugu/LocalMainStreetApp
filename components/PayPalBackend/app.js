@@ -28,33 +28,34 @@ app.get('/', (req, res) => {
 
 app.get('/paypal', (req, res) => {
   //prettier-ignore
+  console.log('hi')
   var create_payment_json = {
-    "intent": 'sale',
-    "payer": {
-      "payment_method": 'paypal',
+    intent: 'sale',
+    payer: {
+      payment_method: 'paypal',
     },
-    "redirect_urls": {
-      "return_url": 'http://localhost:4000/success',
-      "cancel_url": 'http://localhost:4000/cancel',
+    redirect_urls: {
+      return_url: 'http://localhost:4000/success',
+      cancel_url: 'http://localhost:4000/cancel',
     },
-    "transactions": [
+    transactions: [
       {
-        "item_list": {
-          "items": [
+        item_list: {
+          items: [
             {
-              "name": 'item',
-              "sku": 'item',
-              "price": '25.00',
-              "currency": 'USD',
-              "quantity": 1,
+              name: 'item',
+              sku: 'item',
+              price: '25.00',
+              currency: 'USD',
+              quantity: 1,
             },
           ],
         },
-        "amount": {
-          "currency": 'USD',
-          "total": '25.00',
+        amount: {
+          currency: 'USD',
+          total: '25.00',
         },
-        "description": 'This is the payment description.',
+        description: 'This is the payment description.',
       },
     ],
   };

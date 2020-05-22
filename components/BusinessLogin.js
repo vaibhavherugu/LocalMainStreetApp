@@ -15,6 +15,7 @@ import {
   StatusBar,
   AsyncStorage,
 } from 'react-native';
+import Navigator from '../components/routes/shopStack';
 
 class BLoginScreen extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class BLoginScreen extends React.Component {
         if (!tokenval) {
           alert('Incorrect email or password.');
         }
-        this.props.navigation.navigate('Buttons');
+        this.props.navigation.navigate('Dashboard');
       })
       .catch(function (err) {
         if (err === 'Error: Request failed with status code 404') {
@@ -65,6 +66,7 @@ class BLoginScreen extends React.Component {
   };
 
   render() {
+    const g = 'g';
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.viewForSearch}>
@@ -92,7 +94,7 @@ class BLoginScreen extends React.Component {
         <TouchableOpacity
           style={styles.buttons}
           onPress={() => {
-            navigate('Buttons');
+            navigate('Dashboard');
           }}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>

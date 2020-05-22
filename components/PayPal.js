@@ -21,15 +21,14 @@ class PayPal extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      status: '',
     };
   }
-
-  handleResponse = (data) => {
+  //prettier-ignore
+  handleResponse = data => {
     if (data.title === 'success') {
       this.setState({showModal: false});
     } else if (data.title === 'cancel') {
-      this.setState({showModal: false, status: 'Cancelled'});
+      this.setState({showModal: false});
     } else {
       return;
     }
@@ -37,17 +36,19 @@ class PayPal extends React.Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
+      //prettier-ignore
       <View style={styles.bg}>
         <Modal
           visible={this.state.showModal}
           onRequestClose={() => this.setState({showModal: false})}>
           <WebView
+
             source={{uri: 'http://localhost:4000/'}}
-            onNavigationStateChange={(data) => this.handleResponse(data)}
+            onNavigationStateChange={data => this.handleResponse(data)}
             injectedJavaScript={`document.f1.submit()`}
           />
         </Modal>
-        <TouchableOpacity onPress={() => this.setState({showModal: true})}>
+        <TouchableOpacity style={styles.button} onPress={() => this.setState({showModal: true})}>
           <Text>Pay with PayPal</Text>
         </TouchableOpacity>
       </View>
@@ -57,6 +58,17 @@ class PayPal extends React.Component {
 const styles = StyleSheet.create({
   bg: {
     backgroundColor: '#ffffff',
+  },
+  button: {
+    marginTop: 5,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 5,
+    width: 270,
+    opacity: 1,
+    backgroundColor: '#919191',
+    borderRadius: 15,
   },
 });
 

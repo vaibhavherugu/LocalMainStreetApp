@@ -20,6 +20,7 @@ import {
   StatusBar,
   FlatList,
 } from 'react-native';
+
 import {cos} from 'react-native-reanimated';
 stripe.setOptions({
   publishableKey: 'pk_test_HWcOeGStIfoP98VZkHRIJUmO00E1eZyuQG',
@@ -40,7 +41,7 @@ class ShopScreen extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:3000')
+      .get('http://localhost:3002')
       .then((response) => {
         this.setState({
           data: response.data,

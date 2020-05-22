@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>document</title>
+    <title>Document</title>
   </head>
   <body>
-    <h5>Please Wait...</h5>
-    <form name="f1" action="/paypal">
-      <!-- <button type="submit">Pay</button> -->
+    <style>
+      .button {
+        height: 1500;
+        display: flex;
+        flex-direction: 'row';
+        justify-content: 'center';
+        align-items: 'center';
+        margin-bottom: 5;
+        width: 3600;
+        border-radius: 15;
+        align-self: 'center';
+      }
+    </style>
+    <h5>
+      PayPal Loading...
+    </h5>
+    <form action="/paypal">
+      <button name="f2" class="button" type="submit">
+        Make Payment
+      </button>
     </form>
   </body>
 </html>
